@@ -27,9 +27,9 @@ namespace Test.ViewModels
 
             #endregion
 
-           // EmployeesViewSource = (CollectionViewSource)Application.Current.FindResource(nameof(EmployeesViewSource));
+            // EmployeesViewSource = (CollectionViewSource)Application.Current.FindResource(nameof(EmployeesViewSource));
             //EmployeesViewSource = (CollectionViewSource)FindResource(nameof(EmployeesViewSource));
-           // _DataService.Database.EnsureCreated();
+            // _DataService.Database.EnsureCreated();
             _DataService.Employees.Load();
             Employees = _DataService.Employees.Local.ToBindingList();
             //EmployeesViewSource.Source = _DataService.Employees.Local.ToObservableCollection();
@@ -59,14 +59,14 @@ namespace Test.ViewModels
             set => Set(ref _Employees, value);
         }
         #endregion
-#region Department
+        #region Department
         void FillDepartament()
         {
             var d = (from a in _DataService.Departments
-                select a).ToList();
+                     select a).ToList();
             Departments = d;
         }
-        
+
         private List<Department> _Departments;
         public List<Department> Departments
         {
@@ -80,7 +80,7 @@ namespace Test.ViewModels
         void FillOrders()
         {
             var o = (from a in _DataService.Orders
-                select a).ToList();
+                     select a).ToList();
             Orders = o;
         }
         List<Order> _Orders;
