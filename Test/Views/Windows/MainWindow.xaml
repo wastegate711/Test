@@ -1,0 +1,79 @@
+﻿<Window x:Class="Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Test"
+        xmlns:vm="clr-namespace:Test.ViewModels" 
+        mc:Ignorable="d"
+d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel}"
+        Title="{Binding Path=TitleNameWindow}" 
+        Height="350" Width="400">
+    <!--<Window.DataContext>
+        <vm:DataContext/>
+    </Window.DataContext>-->
+    <!--<Window.Resources>-->
+        <!--<CollectionViewSource x:Key="EmployeesViewSource"/>-->
+        <!--<CollectionViewSource x:Key="categoryProductsViewSource"
+                              Source="{Binding Employees, Source={StaticResource}}"/>-->
+    <!--</Window.Resources>-->
+    <TabControl>
+        <!--Сотрудники-->
+        <TabItem Header="Сотрудники">
+            <!--<TabItem.Resources>
+                <CollectionViewSource x:Key="EmployeesViewSource"/>
+            </TabItem.Resources>-->
+            <StackPanel Orientation="Vertical"
+                        
+                        VerticalAlignment="Top">
+                <DataGrid AutoGenerateColumns="False"
+                          ItemsSource="{Binding Employees}"
+                      CanUserAddRows="True"
+                      AlternatingRowBackground="LightGray">
+                    
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=Surname}"/>
+                        <DataGridTextColumn Header="Отчество" Binding="{Binding Path=Patronymic}"/>
+                        <DataGridTextColumn Header="Пол" Binding="{Binding Path=GenderValue}"/>
+                        <DataGridTextColumn Header="Отдел" Binding="{Binding Path=DepartmentId}"/>
+                        <DataGridTextColumn Header="Дата рождения" Binding="{Binding Path=Byrthday}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Добавить" Width="100" Margin="0,3,0,0"/>
+            </StackPanel>
+        </TabItem>
+        <!--Отделы-->
+        <TabItem Header="Отделы">
+            <StackPanel>
+                <DataGrid AutoGenerateColumns="False"
+                          CanUserAddRows="True"
+                          AlternatingRowBackground="LightGray"
+                          ItemsSource="{Binding Path=Departments}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Название отдела" Binding="{Binding Path=Name}"/>
+                        <DataGridTextColumn Header="Управляющий отделом"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Сохранить" Width="100"/>
+            </StackPanel>
+        </TabItem>
+        <!--Заказы-->
+        <TabItem Header="Заказы">
+            <StackPanel>
+                <DataGrid AutoGenerateColumns="False"
+                          CanUserAddRows="True"
+                          AlternatingRowBackground="LightGray"
+                          ItemsSource="{Binding Path=Orders}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Номер заказа" Binding="{Binding Path=Number}"/>
+                        <DataGridTextColumn Header="Контрагент" Binding="{Binding Path=Customer}"/>
+                        <DataGridTextColumn Header="Дата заказа" Binding="{Binding Path=OrderDate}"/>
+                        <DataGridTextColumn Header="Автор заказа" Binding="{Binding Path=EmployeeId}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <Button Content="Сохранить" Width="100"/>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</Window>
