@@ -12,36 +12,38 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using Test.Models;
+using System.Windows.Input;
+using Test.Infrastructure.Commands;
 
 namespace Test.ViewModels
 {
     internal class MainWindowViewModel : Base.ViewModel
     {
         private readonly DataService _DataService = new DataService();
-        //private CollectionViewSource EmployeesViewSource;
+        
         public MainWindowViewModel()
         {
             #region Команды
-
-
-
-            #endregion
-
-            // EmployeesViewSource = (CollectionViewSource)Application.Current.FindResource(nameof(EmployeesViewSource));
-            //EmployeesViewSource = (CollectionViewSource)FindResource(nameof(EmployeesViewSource));
-            // _DataService.Database.EnsureCreated();
+            EmployeeUpdateCommand = new LambdaCommand(OnEmployeeUpdateCommandExecute, CanEmployeeUpdateCommandExecute);
+            #endregion  
+            
             _DataService.Employees.Load();
-            Employees = _DataService.Employees.Local.ToBindingList();
-            //EmployeesViewSource.Source = _DataService.Employees.Local.ToObservableCollection();
+            Employees = _DataService.Employees.Local.ToBindingList();           
             FillDepartament();
-            FillOrders();
+            FillOrders();            
         }
 
         #region Команды
-
-
-
+        #region Сотрудники
+        public ICommand EmployeeUpdateCommand { get; }
+        bool CanEmployeeUpdateCommandExecute(object p) => true;
+        void OnEmployeeUpdateCommandExecute(object p)
+        {
+            _DataService.SaveChanges();
+        }
         #endregion
+        #endregion
+
         #region Заголовок окна
         private string _TitleNameWindow = "Тестовое задание";
 
@@ -51,6 +53,7 @@ namespace Test.ViewModels
             set => Set(ref _TitleNameWindow, value);
         }
         #endregion
+
         #region Employee
         private IEnumerable<Employee> _Employees;
         public IEnumerable<Employee> Employees
@@ -59,12 +62,20 @@ namespace Test.ViewModels
             set => Set(ref _Employees, value);
         }
         #endregion
+
         #region Department
         void FillDepartament()
         {
             var d = (from a in _DataService.Departments
                      select a).ToList();
             Departments = d;
+        }
+        List<Department> _SelectDepatment;
+
+        public List<Department> SelectDepatment
+        {
+            get => _SelectDepatment;
+            set => Set(ref _SelectDepatment, value);
         }
 
         private List<Department> _Departments;
@@ -76,7 +87,6 @@ namespace Test.ViewModels
         #endregion
 
         #region Orders
-
         void FillOrders()
         {
             var o = (from a in _DataService.Orders
@@ -90,7 +100,6 @@ namespace Test.ViewModels
             get => _Orders;
             set => Set(ref _Orders, value);
         }
-
         #endregion
     }
 }

@@ -3,44 +3,112 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="clr-namespace:System;assembly=System.Runtime"       
         xmlns:local="clr-namespace:Test"
-        xmlns:vm="clr-namespace:Test.ViewModels" 
+        xmlns:vm="clr-namespace:Test.ViewModels"
+        xmlns:models="clr-namespace:Test.Models"
+        xmlns:converter="clr-namespace:Test.Infrastructure.Converters"
         mc:Ignorable="d"
 d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel}"
         Title="{Binding Path=TitleNameWindow}" 
-        Height="350" Width="400">
+        Height="350" Width="450">
     <!--<Window.DataContext>
         <vm:DataContext/>
     </Window.DataContext>-->
-    <!--<Window.Resources>-->
-        <!--<CollectionViewSource x:Key="EmployeesViewSource"/>-->
-        <!--<CollectionViewSource x:Key="categoryProductsViewSource"
-                              Source="{Binding Employees, Source={StaticResource}}"/>-->
-    <!--</Window.Resources>-->
+    <Window.Resources>
+        <converter:EnumConverter x:Key="EnumConverter"/>
+        <converter:DateConverter x:Key="DateConverter"/>
+        <ObjectDataProvider x:Key="Gender" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="models:Gender"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
     <TabControl>
         <!--Сотрудники-->
         <TabItem Header="Сотрудники">
-            <!--<TabItem.Resources>
-                <CollectionViewSource x:Key="EmployeesViewSource"/>
-            </TabItem.Resources>-->
             <StackPanel Orientation="Vertical"
-                        
                         VerticalAlignment="Top">
                 <DataGrid AutoGenerateColumns="False"
                           ItemsSource="{Binding Employees}"
                       CanUserAddRows="True"
-                      AlternatingRowBackground="LightGray">
-                    
+                          AlternatingRowBackground="LightGray">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Имя" Binding="{Binding Path=Name}"/>
                         <DataGridTextColumn Header="Фамилия" Binding="{Binding Path=Surname}"/>
+                        <DataGridTextColumn Header="Имя" Binding="{Binding Path=Name}"/>
                         <DataGridTextColumn Header="Отчество" Binding="{Binding Path=Patronymic}"/>
-                        <DataGridTextColumn Header="Пол" Binding="{Binding Path=GenderValue}"/>
-                        <DataGridTextColumn Header="Отдел" Binding="{Binding Path=DepartmentId}"/>
-                        <DataGridTextColumn Header="Дата рождения" Binding="{Binding Path=Byrthday}"/>
+                        <!--<DataGridTextColumn Header="Пол" Binding="{Binding GenderValue, Converter={StaticResource EnumConverter}, ConverterParameter={x:Type models:Gender}}" />-->
+                        <DataGridTemplateColumn Header="Пол">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Employee">
+                                    <TextBlock Text="{Binding GenderValue, Converter={StaticResource EnumConverter}, ConverterParameter={x:Type models:Gender}}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <ComboBox 
+                                        ItemsSource="{Binding Source={StaticResource Gender}}"
+                                        SelectedItem="{Binding GenderValue, Converter={StaticResource EnumConverter}, ConverterParameter={x:Type models:Gender}}">                                        
+                                    </ComboBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--#region Отдел-->
+                        <!--<DataGridTextColumn Header="Отдел" Binding="{Binding Path=Department.Name}"/>-->
+                        <DataGridTemplateColumn Header="Отдел">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Employee">
+                                    <TextBlock Text="{Binding Path=Department.Name}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>                                    
+                                    <ComboBox 
+                                        ItemsSource="{Binding DataContext.Departments, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                        DisplayMemberPath="Name"                                        
+                                        SelectedValue="{Binding Department}">                     
+                                    </ComboBox>
+                                </DataTemplate>                                   
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--#endregion-->
+                        <!--#region Дата рождения-->
+                        <!--<DataGridTextColumn Header="Дата рождения" Binding="{Binding Path=Birthday}"/>-->
+                        <DataGridTemplateColumn Header="Дата рождения">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Employee">
+                                    <TextBlock Text="{Binding Path=Birthday, Converter={StaticResource DateConverter} }"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                            
+                            <DataGridTemplateColumn.CellEditingTemplate>                                
+                                <DataTemplate DataType="models:Employee">
+                                    <DatePicker SelectedDate="{Binding Path=Birthday,
+                                                 StringFormat=dd.MM.yyyy }"  >
+                                        <DatePicker.Resources>
+                                            <Style TargetType="{x:Type DatePickerTextBox}">
+                                                <Setter Property="Control.Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate>
+                                                            <TextBox x:Name="PART_TextBox"
+     Text="{Binding Path=SelectedDate, StringFormat='dd.MM.yyyy', 
+     RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </DatePicker.Resources>
+                                    </DatePicker>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--#endregion-->
                     </DataGrid.Columns>
                 </DataGrid>
-                <Button Content="Добавить" Width="100" Margin="0,3,0,0"/>
+                <Button Content="Сохранить" Width="100" 
+                        Command="{Binding Path=EmployeeUpdateCommand}"/>
             </StackPanel>
         </TabItem>
         <!--Отделы-->
@@ -52,7 +120,24 @@ d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel}"
                           ItemsSource="{Binding Path=Departments}">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Название отдела" Binding="{Binding Path=Name}"/>
-                        <DataGridTextColumn Header="Управляющий отделом"/>
+                        <!--<DataGridTextColumn Header="Руководитель отдела" Binding="{Binding Path=Director.Surname}"/>-->
+                        <DataGridTemplateColumn Header="Руководитель отдела">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Department">
+                                    <TextBlock Text="{Binding Path=Director.Surname}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <ComboBox 
+                                        ItemsSource="{Binding DataContext.Employees, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                        DisplayMemberPath="Surname"                                        
+                                        SelectedValue="{Binding Director}">
+                                    </ComboBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
                 <Button Content="Сохранить" Width="100"/>
@@ -68,12 +153,59 @@ d:DataContext="{d:DesignInstance Type=vm:MainWindowViewModel}"
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Номер заказа" Binding="{Binding Path=Number}"/>
                         <DataGridTextColumn Header="Контрагент" Binding="{Binding Path=Customer}"/>
-                        <DataGridTextColumn Header="Дата заказа" Binding="{Binding Path=OrderDate}"/>
-                        <DataGridTextColumn Header="Автор заказа" Binding="{Binding Path=EmployeeId}"/>
+                        <!--<DataGridTextColumn Header="Дата заказа" Binding="{Binding Path=OrderDate}"/>-->
+                        <DataGridTemplateColumn Header="Дата заказа">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Orders">
+                                    <TextBlock Text="{Binding Path=OrderDate, Converter={StaticResource DateConverter} }"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate DataType="models:Employee">
+                                    <DatePicker SelectedDate="{Binding Path=OrderDate,
+                                                 StringFormat=dd.MM.yyyy }"  >
+                                        <DatePicker.Resources>
+                                            <Style TargetType="{x:Type DatePickerTextBox}">
+                                                <Setter Property="Control.Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate>
+                                                            <TextBox x:Name="PART_TextBox"
+     Text="{Binding Path=SelectedDate, StringFormat='dd.MM.yyyy', 
+     RelativeSource={RelativeSource AncestorType={x:Type DatePicker}}}" />
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Style>
+                                        </DatePicker.Resources>
+                                    </DatePicker>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
+                        <!--<DataGridTextColumn Header="Автор заказа" Binding="{Binding Path=Employee.Surname}"/>-->
+                        <DataGridTemplateColumn Header="Автор заказа">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate DataType="models:Orders">
+                                    <TextBlock Text="{Binding Path=Employee.Surname}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+
+                            <DataGridTemplateColumn.CellEditingTemplate>
+                                <DataTemplate>
+                                    <ComboBox 
+                                        ItemsSource="{Binding DataContext.Employees, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"
+                                        DisplayMemberPath="Surname"                                        
+                                        SelectedValue="{Binding Employee}">
+                                    </ComboBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellEditingTemplate>
+                        </DataGridTemplateColumn>
                     </DataGrid.Columns>
                 </DataGrid>
-                <Button Content="Сохранить" Width="100"/>
+                <Button Content="Сохранить" Width="100" Command="{Binding Path=EmployeeUpdateCommand}"/>
             </StackPanel>
-        </TabItem>
+        </TabItem>        
     </TabControl>
+    
+    
 </Window>
