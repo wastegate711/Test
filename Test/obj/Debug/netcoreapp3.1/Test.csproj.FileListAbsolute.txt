@@ -1,0 +1,246 @@
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.exe
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Test.pdb
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.cache
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.lref
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.g.resources
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.dll
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.pdb
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Project Visual Studio\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Project Visual Studio\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.exe
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Test.pdb
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Project\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.cache
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.lref
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.g.resources
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.dll
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.pdb
+D:\Project\Test\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.exe
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.pdb
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\App.g.cs
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.cache
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.lref
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.g.resources
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.dll
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.pdb
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache
+F:\Torrent\Test\Test\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\App.g.cs
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.cache
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.dll
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.pdb
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.exe
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Test.pdb
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-mips64\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.g.cs
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test_MarkupCompile.lref
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Views\Windows\MainWindow.baml
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.g.resources
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+\\Wastegate\f\Torrent\Test\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache
+\\Wastegate\f\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Data\work.db
+F:\Torrent\Test\Test\bin\Debug\netcoreapp3.1\Data\work.db
