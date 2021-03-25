@@ -18,10 +18,11 @@ namespace Test.Models
         /// <summary>
         /// Ссылка на сотрудника
         /// </summary>
-        //public int EmployeeId { get; set; }
-        //public virtual Employee Employee { get; set; }
         public virtual ICollection<Employee>
             Employees
         { get; private set; } = new ObservableCollection<Employee>();
+
+        public int? DirectorId { get; set; }
+        public virtual Employee Director { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Windows.Data;
 
 namespace Test.Models
 {
@@ -11,11 +12,7 @@ namespace Test.Models
     public class Employee
     {
         public int Id { get; set; }
-        public enum Gender
-        {
-            Male = 0,
-            Women = 1
-        };
+       
         /// <summary>
         /// имя сотрудника
         /// </summary>
@@ -31,7 +28,7 @@ namespace Test.Models
         /// <summary>
         /// День рождения сотрудника
         /// </summary>
-        public string Byrthday { get; set; }
+        public string Birthday { get; set; }
         /// <summary>
         /// Пол муж/жен
         /// </summary>
@@ -45,5 +42,15 @@ namespace Test.Models
             Orders
         { get; private set; } =
             new ObservableCollection<Order>();
+        public virtual ICollection<Department>
+           Departments
+        { get; private set; } =
+           new ObservableCollection<Department>();
     }
+
+    public enum Gender
+    {
+        М,
+        Ж
+    }    
 }
